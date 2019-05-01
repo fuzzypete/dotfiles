@@ -1,10 +1,6 @@
 # Where the magic happens.
 export DOTFILES=~/.dotfiles
 
-# Add binaries into the path
-PATH=$DOTFILES/bin:$PATH
-export PATH
-
 # Source all files in "source"
 function src() {
   local file
@@ -23,3 +19,5 @@ function dotfiles() {
 }
 
 src
+
+[[ -s "/home/pwickersham/.gvm/scripts/gvm" ]] && source "/home/pwickersham/.gvm/scripts/gvm"
